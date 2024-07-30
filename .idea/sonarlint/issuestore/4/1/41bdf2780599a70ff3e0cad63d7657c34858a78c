@@ -1,0 +1,23 @@
+
+Nkotlin:S1172Õ"5Use "_" instead of this unused lambda parameter "id".(•©·û
+Nkotlin:S1172Ð"5Use "_" instead of this unused lambda parameter "id".(•©·û
+6kotlin:S125{"Remove this commented out code.(ŠÓ·±
+6kotlin:S125„"Remove this commented out code.(è»»_
+7kotlin:S125ñ"Remove this commented out code.(ÛØ»¾
+<kotlin:S125µ"Remove this commented out code.(â»Ýûÿÿÿÿ
+7kotlin:S125Ä"Remove this commented out code.(¦«­
+7kotlin:S125Š"Remove this commented out code.(†Ý°¡
+7kotlin:S125ù"Remove this commented out code.(ð×åÿ
+<kotlin:S125ý"Remove this commented out code.(›ÿžîþÿÿÿÿ
+7kotlin:S125—"Remove this commented out code.(Çù€ÿ
+Pkotlin:S1135ª"2Complete the task associated to this TODO comment.(žáÃæùÿÿÿÿ
+Kkotlin:S1481´"-Remove this unused "location" local variable.(šÊÓýÿÿÿÿ
+7kotlin:S1128"Remove this unused import.(’—ÄÑùÿÿÿÿ
+9kotlin:S1128!"Remove this unused import.(É¨®ð8¹ã’—2
+gkotlin:S1192¢"IDefine a constant instead of duplicating this literal "#,##,###" 3 times.(©õÐÍÿÿÿÿÿ
+ekotlin:S1192÷"LDefine a constant instead of duplicating this literal "#,##,###.##" 4 times.(—¿Ìó
+<kotlin:S1874¾"#Deprecated code should not be used.(Ëã¢Ü
+okotlin:S3776]"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(¶Á»¬þÿÿÿÿ
+skotlin:S1186Ù"ZAdd a nested comment explaining why this function is empty or complete the implementation.(Íš¨Ä
+xkotlin:S1186õ"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¼”šâüÿÿÿÿ
+Lkotlin:S1066".Merge this "if" statement with the nested one.(ö…’èøÿÿÿÿ

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/closeRequestSuccess"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="18dp"
+        android:visibility="gone"
+        android:background="@drawable/buttoncolor"
+        android:src="@drawable/ic_close" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/closeRequestSuccess"
+        android:layout_marginBottom="-10dp"
+        app:cardCornerRadius="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="20dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/successImageView"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_success"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/takeOrdersTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/successImageView"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/bold"
+                android:gravity="center"
+                android:text="@string/order_placed_successfully"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/takeOrdersTextView"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/do_you_wish_to_collect_the_amount_for_this_order"
+                android:textColor="#686868"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/collectAmount"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/buttoncolor"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="@font/bold"
+                android:text="@string/done"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="visible"
+                app:cornerRadius="8dp" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

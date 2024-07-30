@@ -1,0 +1,35 @@
+
+Ukotlin:S1172Ð"<Use "_" instead of this unused lambda parameter "isChecked".(Ä±¯õ
+9kotlin:S6615ï" Remove this useless initializer.(¯Ù“¼
+;kotlin:S125)"Remove this commented out code.(Ž›Ø×üÿÿÿÿ
+;kotlin:S125g"Remove this commented out code.(ÇÞÿ¥úÿÿÿÿ
+<kotlin:S125ý"Remove this commented out code.(šØËæýÿÿÿÿ
+7kotlin:S125¥"Remove this commented out code.(Å“…‰
+<kotlin:S125²"Remove this commented out code.(Ôý«£úÿÿÿÿ
+<kotlin:S125õ"Remove this commented out code.(Ÿø„ºûÿÿÿÿ
+<kotlin:S125„"Remove this commented out code.(Ýéãƒÿÿÿÿÿ
+6kotlin:S125ß"Remove this commented out code.(Òˆñw
+6kotlin:S125–"Remove this commented out code.(Òˆñw
+<kotlin:S125¥"Remove this commented out code.(…ˆ¶¾ûÿÿÿÿ
+pkotlin:S117Ó"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(æ«˜áûÿÿÿÿ
+pkotlin:S117ð"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(æ«˜áûÿÿÿÿ
+kkotlin:S117ô"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(§ô¦ß
+kkotlin:S117‚"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(œ»œÆ
+pkotlin:S117Þ"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(´½—Ÿûÿÿÿÿ
+pkotlin:S117Ê"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(ÁÓ’Æøÿÿÿÿ
+kkotlin:S117”"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Äîßò
+Akotlin:S108ý")Either remove or fill this block of code.(•¦þ
+;kotlin:S6530¤"Remove this unchecked cast.(ã¼Çˆ8ðê’—2
+Nkotlin:S1481Ó"0Remove this unused "total_value" local variable.(æ«˜áûÿÿÿÿ
+Fkotlin:S1481Ñ"(Remove this unused "btn" local variable.(¨ß¶Ëýÿÿÿÿ
+Kkotlin:S1481e".Remove this unused "checkItem" local variable.(˜·Âýÿÿÿÿ
+Kkotlin:S1481±"-Remove this unused "boxValue" local variable.(Ìš¾Þýÿÿÿÿ
+Mkotlin:S1481†"4Remove this unused "decimalFormattx" local variable.(ƒÑ¨Æ
+Nkotlin:S1481ð"0Remove this unused "total_value" local variable.(æ«˜áûÿÿÿÿ
+dkotlin:S1192T"LDefine a constant instead of duplicating this literal "#,##,###.##" 6 times.(™ÏÅ¦
+pkotlin:S3776K"SRefactor this method to reduce its Cognitive Complexity from 108 to the 15 allowed.(›¤ðÙÿÿÿÿÿ
+xkotlin:S1186Ý"ZAdd a nested comment explaining why this function is empty or complete the implementation.(¼”šâüÿÿÿÿ
+skotlin:S1186å"ZAdd a nested comment explaining why this function is empty or complete the implementation.(­ïã
+rkotlin:S1186"ZAdd a nested comment explaining why this function is empty or complete the implementation.(ÛÆ<
+Fkotlin:S1066ü".Merge this "if" statement with the nested one.(žÏ²|
+Fkotlin:S1066µ".Merge this "if" statement with the nested one.(žÏ²|

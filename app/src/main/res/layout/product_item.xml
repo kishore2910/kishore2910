@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:orientation="vertical">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/outofStock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/medium"
+            android:text="@string/out_of_stock"
+            app:textAllCaps="true"
+            android:textColor="@color/white"
+            android:background="@drawable/curverectred"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/productName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:layout_marginTop="4dp"
+                android:text="@string/active_power_breeze_soap_1kg"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:src="@drawable/ic_baseline_info_24"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/productId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/regular"
+                android:text="@string/_7356"
+                android:layout_gravity="center"
+                android:textColor="#686868"
+                android:textSize="11sp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pcs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="#686868"
+                android:layout_marginTop="4dp"
+                android:text="@string/_7356"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:textSize="11sp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/regular"
+                android:text="@string/orsymbol"
+                android:paddingStart="5dp"
+                android:visibility="gone"
+                android:paddingEnd="5dp"
+                android:textColor="#686868"
+                android:textSize="12sp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/nosvalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/regular"
+                android:visibility="gone"
+                android:text="@string/nos_value_144_86"
+                android:textColor="#686868"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/discountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/regular"
+                android:text="(Discount)"
+                android:textColor="#2BB673"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:lines="1"
+                android:textSize="12sp" />
+            <!--            <androidx.appcompat.widget.SwitchCompat-->
+            <!--                android:layout_width="80dp"-->
+            <!--                android:layout_height="10dp"-->
+            <!--                android:id="@+id/toggle"-->
+            <!--                android:textOff="0%"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:textOn="1%"-->
+            <!--                android:thumb="@drawable/thumb"-->
+            <!--                app:showText="true"-->
+            <!--                app:track="@drawable/track" />-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/spinText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="4dp"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:drawableEndCompat="@drawable/ic_viewmore" />
+
+                <Spinner
+                    android:id="@+id/toggle"
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bold"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/productPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/medium"
+                android:text="@string/_7356"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/itemCount"
+                android:layout_width="56dp"
+                android:layout_height="36dp"
+                android:background="@drawable/curverectline"
+                android:backgroundTint="@null"
+                android:textSize="14sp"
+                android:padding="3dp"
+                android:gravity="center"
+                android:maxLength="5"
+                android:textColor="@color/black"
+                android:fontFamily="@font/medium"
+                android:inputType="number" />
+
+<!--            <com.google.android.material.button.MaterialButtonToggleGroup-->
+<!--                android:id="@+id/toggleGroup"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                app:checkedButton="@id/boxButton"-->
+<!--                app:singleSelection="true">-->
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                    android:id="@+id/nosButton"-->
+<!--                    android:layout_width="54dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:textColor="@color/togglebutton"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:checkable="false"-->
+<!--                    android:text="@string/nos" />-->
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                    android:id="@+id/boxButton"-->
+<!--                    android:layout_width="54dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="12sp"-->
+<!--                    android:checkable="true"-->
+<!--                    android:backgroundTint="@color/togglebutton"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:text="@string/box" />-->
+
+<!--            </com.google.android.material.button.MaterialButtonToggleGroup>-->
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleGroup"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                app:checkedButton="@id/boxButton"
+                android:layout_marginStart="8dp"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:id="@+id/boxButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:checkable="true"
+                    android:backgroundTint="@color/togglebutton"
+                    android:textColor="@color/white"
+                    android:text="@string/box" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:id="@+id/nosButton"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checkable="false"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/togglebutton"
+                    android:textSize="10sp"
+                    android:text="@string/nos" />
+
+
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewLine"
+        android:background="#F1F1F1"
+        android:layout_marginBottom="4dp" />
+</LinearLayout>

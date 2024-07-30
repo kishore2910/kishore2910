@@ -1,0 +1,12 @@
+
+Ukotlin:S1172à"7Use "_" instead of this unused lambda parameter "task".(þ‘Äüÿÿÿÿ
+Nkotlin:S1172ù"5Use "_" instead of this unused lambda parameter "id".(•©·û
+Nkotlin:S1172ó"5Use "_" instead of this unused lambda parameter "id".(•©·û
+Wkotlin:S6619§">Remove this useless non-null assertion !!, it always succeeds.(‡·Í¿
+Ukotlin:S6619§"<Remove this useless null-safe access ?., it always succeeds.(‡·Í¿
+7kotlin:S125Í"Remove this commented out code.(›æ‚õ
+7kotlin:S125â"Remove this commented out code.(˜Ôã”
+Jkotlin:S1144"1Remove this unused private "SuccessAlert" method.(µ½™Ê
+Pkotlin:S1135×"2Complete the task associated to this TODO comment.(žáÃæùÿÿÿÿ
+<kotlin:S1874á"#Deprecated code should not be used.(Ëã¢Ü
+Fkotlin:S6529ž".Replace collection size check with "isEmpty()"(…¯ìl

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="textgrey">#626262</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="statuscolor">#2D358F</color>
+    <color name="lightgrey">#61CFCFCF</color>
+    <color name="buttoncolor">#EB008B</color>
+    <color name="togglebutton">#2D358F</color>
+    <color name="gradiant">#252C78</color>
+
+    <color name="indicatorColor">#D9FFFFFF</color>
+    <color name="trackColor">#45FFFFFF</color>
+
+    <color name="textColorPrimary">#262626</color>
+    <color name="colorAccent">#618BE3</color>
+    <color name="indicatorDefault">#E9E5E5</color>
+    <color name="textColorSecondary">#6C8398</color>
+    <color name="colorControlDefault">#9DAEBD</color>
+
+    <color name="skyblue">#7bd9f6</color>
+    <color name="darkred">#ff0000</color>
+    <color name="pending">#F4E1C4</color>
+    <color name="pending_text">#F1AF4F</color>
+    <color name="redColor">#DB5252</color>
+    <color name="orangeColor">#eb8634</color>
+    <color name="greenColor">#08a325</color>
+
+    <color name="buttoncolordisable">#E8CDDD</color>
+    <color name="beatTextColor">#a42678</color>
+
+</resources>

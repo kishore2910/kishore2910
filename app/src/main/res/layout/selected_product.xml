@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:text="@string/active_power_breeze_soap_1kg"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/productId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/_240_nos"
+                        android:textColor="#686868"
+                        android:textSize="14sp" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/nosvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/regular"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/_10_piece"
+                        android:textColor="#686868"
+                        android:textSize="14sp" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/regular"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/orsymbol"
+                        android:visibility="gone"
+                        android:textColor="#686868"
+                        android:textSize="14sp" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/taxAmount"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/regular"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/_70_tax_2"
+                        android:visibility="gone"
+                        android:textColor="#686868"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteItem"
+                android:paddingStart="4dp"
+                android:src="@drawable/ic_close"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/productPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:text="@string/_34_675"
+                android:visibility="visible"
+                android:layout_weight="1"
+                android:textSize="14sp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/free"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:text="Free"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:textColor="#2BB673"
+                android:textSize="14sp" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/discounted"
+                android:fontFamily="@font/bold"
+                android:layout_marginStart="4dp"
+                android:text="(1% Discounted)"
+                android:visibility="visible"
+                android:textColor="#2BB673"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewLine"
+        android:background="#F1F1F1"
+        android:layout_marginBottom="4dp" />
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.activity.bottomnav.ui.PendingFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F6FA"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/searchView"
+                android:background="@drawable/searchviewrect"
+                android:focusable="false"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="14dp"
+                app:iconifiedByDefault="false"
+                android:focusableInTouchMode="true"
+                app:searchIcon="@drawable/ic_search_inactive"
+                app:queryBackground="@android:color/transparent"
+                app:queryHint="@string/enter_shop_Name"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/noShopsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchView"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:text="No Shops Found"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/pendingList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/searchView"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="12dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <TextView
+                android:id="@+id/noBeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_pending_orders"
+                android:layout_below="@+id/searchView"
+                android:layout_marginTop="200dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

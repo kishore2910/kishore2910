@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6FA"
+    tools:context=".ui.main.activity.shopdetail.SalesReturn">
+    <RelativeLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/gradient" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/back"
+            android:layout_height="?actionBarSize"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_back" />
+
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sales Return"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shopname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading"
+            android:gravity="center"
+            android:text="Murugan Stores"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/step1line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_below="@+id/shopname"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/homeline"
+            android:fontFamily="@font/bold" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/returncontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/step1line"
+            android:gravity="center"
+            android:text="Total Returns"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/returncount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/returncontent"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/returnhistoryheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/action_bar"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/bold"
+            android:text="Return History"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/returnitems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/returnhistoryheading"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="19dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/fabbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_resource_return" />
+
+
+</FrameLayout>

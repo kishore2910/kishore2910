@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="52dp"
+    android:height="52dp"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+  <path
+      android:pathData="M4,0L48,0A4,4 0,0 1,52 4L52,48A4,4 0,0 1,48 52L4,52A4,4 0,0 1,0 48L0,4A4,4 0,0 1,4 0z"
+      android:strokeWidth="1"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="1.4673295"
+          android:startX="26"
+          android:endY="51.796432"
+          android:endX="26"
+          android:type="linear">
+        <item android:offset="0" android:color="#FFF37EF5"/>
+        <item android:offset="1" android:color="#FFB43FB7"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M4,0L48,0A4,4 0,0 1,52 4L52,48A4,4 0,0 1,48 52L4,52A4,4 0,0 1,0 48L0,4A4,4 0,0 1,4 0z"
+      android:strokeWidth="1"
+      android:fillColor="#EC926F"
+      android:fillType="evenOdd"
+      android:strokeColor="#00000000"/>
+  <path
+      android:pathData="M38.9997,14.3542L38.9997,19.0539C39.0198,20.5178 37.9077,21.738 36.4774,21.8214C35.7754,21.8495 35.0931,21.5809 34.5908,21.0789C34.084,20.5784 33.7991,19.8881 33.8023,19.1678C33.8023,20.6357 32.6379,21.8256 31.2015,21.8256C29.7652,21.8256 28.6008,20.6357 28.6008,19.1678C28.6008,20.6357 27.4364,21.8256 26,21.8256C24.5636,21.8256 23.3992,20.6357 23.3992,19.1678C23.3992,20.6357 22.2348,21.8256 20.7985,21.8256C19.3621,21.8256 18.1977,20.6357 18.1977,19.1678C18.2003,19.8864 17.9167,20.5752 17.4121,21.0758C16.9076,21.5763 16.2254,21.8455 15.5226,21.8214C14.0923,21.738 12.9803,20.5178 13.0003,19.0539L13.0003,14.3542C13.0003,13.6063 13.5936,13 14.3254,13L37.6746,13C38.4064,13 38.9997,13.6063 38.9997,14.3542ZM35.4164,40C36.0594,40 36.5806,39.4674 36.5806,38.8103L36.5806,23.5047L36.3701,23.5047C35.4379,23.5034 34.5327,23.1842 33.7982,22.5977C32.2678,23.8071 30.1311,23.8071 28.6008,22.5977C27.0686,23.8063 24.9314,23.8063 23.3992,22.5977C21.8689,23.8071 19.7322,23.8071 18.2018,22.5977C17.4603,23.1825 16.5501,23.5 15.6134,23.5005L15.4194,23.5005L15.4194,38.8103C15.4194,39.4674 15.9406,40 16.5836,40L19.1885,40L19.1885,31.4866L25.517,31.4866L25.517,40L35.4164,40Z"
+      android:strokeWidth="1"
+      android:fillColor="#FFFFFF"
+      android:fillType="nonZero"
+      android:strokeColor="#00000000"/>
+</vector>

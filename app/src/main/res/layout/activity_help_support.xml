@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<ScrollView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ui.main.activity.support.HelpSupportActivity">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/header"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:background="@drawable/gradient">-->
+
+<!--            <androidx.appcompat.widget.AppCompatImageView-->
+<!--                android:id="@+id/Back"-->
+<!--                android:layout_width="28dp"-->
+<!--                android:layout_height="?actionBarSize"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:src="@drawable/ic_back" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/Title"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?actionBarSize"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:fontFamily="@font/semibold"-->
+<!--                android:gravity="center"-->
+<!--                android:text="@string/support"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="20sp" />-->
+
+<!--        </RelativeLayout>-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:id="@+id/pic"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/header"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:src="@drawable/ic_phone_1x" />-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/contenttwo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/pic"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:fontFamily="@font/bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/get_24_7_support_with_power_soap"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18sp" />-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/contentone"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/contenttwo"-->
+<!--            android:fontFamily="@font/regular"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Need assistance?\nDo not hesitate to Mail us or Call us"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="16sp" />-->
+
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/mailus"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="66dp"-->
+<!--            android:layout_below="@+id/contentone"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            android:layout_marginStart="18dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginEnd="18dp"-->
+<!--            android:layout_marginBottom="8dp"-->
+<!--            android:backgroundTint="@color/buttoncolor"-->
+<!--            android:fontFamily="@font/bold"-->
+<!--            android:text="Mail us"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="16dp"-->
+<!--            android:visibility="visible"-->
+<!--            app:cornerRadius="2dp" />-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/contentthree"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/mailus"-->
+<!--            android:fontFamily="@font/regular"-->
+<!--            android:gravity="center"-->
+<!--            android:text="or give us a call on"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="16sp" />-->
+
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/number"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/contentthree"-->
+<!--            android:layout_marginTop="14dp"-->
+<!--            android:fontFamily="@font/bold"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/support_call"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="28sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/description"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Description"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="21sp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_below="@+id/number"/>-->
+
+
+<!--        &lt;!&ndash;        <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/descriptionValue"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="150dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginStart="18dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginTop="18dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_marginEnd="18dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_below="@+id/description"&ndash;&gt;-->
+<!--        &lt;!&ndash;            app:endIconDrawable="@drawable/down_arrow"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:background="@drawable/outline_gradient">&ndash;&gt;-->
+
+<!--        &lt;!&ndash;            <EditText&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:id="@+id/content"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:background="@color/white"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_marginEnd="5dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:textSize="16dp"&ndash;&gt;-->
+
+<!--        &lt;!&ndash;                android:textColor="@color/black"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:text="going to native"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:maxLines="10"/>&ndash;&gt;-->
+
+<!--        &lt;!&ndash;        </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/descriptionValue"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            app:boxCornerRadiusBottomEnd="4dp"-->
+<!--            app:boxCornerRadiusBottomStart="4dp"-->
+<!--            app:boxCornerRadiusTopEnd="4dp"-->
+<!--            app:boxCornerRadiusTopStart="4dp"-->
+<!--            android:layout_below="@+id/description">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=""-->
+<!--                android:inputType="textMultiLine"-->
+<!--                android:maxLines="10"-->
+<!--                android:textColor="@color/black" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/licenseText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Attachment :"-->
+<!--            android:textSize="21sp"-->
+<!--            android:layout_marginStart="18dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_below="@+id/descriptionValue"-->
+<!--            />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/licenseImg"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/upload_img"-->
+<!--            android:layout_marginStart="18dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_below="@+id/licenseText"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/uploadConditions"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/image_format_should_be_in_jpg_ong_pdf"-->
+<!--            android:layout_marginStart="18dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_below="@+id/licenseImg"/>-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/sendBtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:backgroundTint="@color/buttoncolor"-->
+<!--            android:text="Send"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="16sp"-->
+<!--            app:cornerRadius="8dp"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:layout_marginStart="16dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:layout_below="@+id/uploadConditions"-->
+<!--            />-->
+
+
+
+
+<!--    </RelativeLayout>-->
+
+<!--</ScrollView>-->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+
+        <RelativeLayout
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/gradient"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/Back"
+                android:layout_width="28dp"
+                android:layout_height="?actionBarSize"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/semibold"
+                android:gravity="center"
+                android:text="@string/support"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/action_bar"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:gravity="start|left"
+            android:hint="Text here..."
+            android:background="@drawable/edit_bg"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:text=""
+            android:padding="5dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/uploadImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/upload_2x"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content"/>
+
+        <ImageView
+            android:id="@+id/tickImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_complete_tick"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content"/>
+
+        <TextView
+            android:id="@+id/uploadText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:textColor="#0B0343"
+            android:textSize="20sp"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/uploadImage"
+            app:layout_constraintTop_toBottomOf="@+id/content"
+            />
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/uploadedText"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="Uploaded"-->
+        <!--        android:textColor="#0B0343"-->
+        <!--        android:textSize="20sp"-->
+        <!--        android:visibility="gone"-->
+        <!--        android:fontFamily="@font/bold"-->
+        <!--        android:layout_marginTop="16dp"-->
+        <!--        android:layout_marginStart="5dp"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/uploadImage"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/content"-->
+        <!--        />-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/buttoncolor"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cornerRadius="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/uploadText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <View
+            android:id="@+id/triple"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="#F1F1F1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sendBtn"/>
+
+        <TextView
+            android:id="@+id/needAss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need assistance?"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triple"/>
+
+
+        <TextView
+            android:id="@+id/get24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get 24*7 support with powersoap,Don't hesitate to Mail us or Call us"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/needAss"/>
+
+        <RelativeLayout
+            android:id="@+id/call"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/call_border"
+            android:gravity="center"
+            android:padding="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/get24">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/call_outline"
+                android:drawablePadding="5dp"
+                android:text="Call us"
+                android:textColor="@color/buttoncolor"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mailus"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/call_border"
+            android:gravity="center"
+            android:padding="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/call"
+            app:layout_constraintTop_toBottomOf="@+id/get24">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/email_outline"
+                android:drawablePadding="5dp"
+                android:text="Mail us"
+                android:textColor="@color/buttoncolor"
+                android:textSize="16dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

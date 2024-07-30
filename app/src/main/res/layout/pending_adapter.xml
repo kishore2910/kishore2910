@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.main.adapter.BeatAdapter">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/white"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/darkred"
+                android:text="@string/pending"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="visible"
+                tools:ignore="SmallSp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/completedStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="#7EC881"
+                android:text="@string/completed"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/status"
+                android:fontFamily="@font/regular"
+                android:gravity="end"
+                android:text="| Traders"
+                android:textColor="#686868"
+                android:textSize="12sp" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/bold"
+                android:layout_below="@+id/status"
+                android:text="@string/murugan_stores"
+                android:textColor="#232323"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopname"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/kms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shopname"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/location"
+                android:ellipsize="end"
+                android:fontFamily="@font/regular"
+                android:maxLines="2"
+                android:text="@string/_4_kms_away"
+                android:textColor="#686868"
+                android:textSize="12sp" />
+
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/category"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@+id/shopname"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:layout_toEndOf="@+id/kms"-->
+            <!--                android:fontFamily="@font/regular"-->
+            <!--                android:text="| Traders"-->
+            <!--                android:textColor="#686868"-->
+            <!--                android:textSize="12sp" />-->
+
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:id="@+id/linearLayout"-->
+            <!--                android:layout_below="@+id/location"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginTop="12dp"-->
+            <!--                android:visibility="gone"-->
+            <!--                android:orientation="horizontal">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:orientation="vertical">-->
+            <!--&lt;!&ndash;                    <com.google.android.material.textview.MaterialTextView&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:id="@+id/items"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:fontFamily="@font/regular"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:text="@string/target"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textColor="#232323"&ndash;&gt;-->
+            <!--&lt;!&ndash;                        android:textSize="15sp" />&ndash;&gt;-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/targetAmount"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="8dp"-->
+            <!--                        android:fontFamily="@font/medium"-->
+            <!--                        android:text="@string/_126"-->
+            <!--                        android:textColor="#232323"-->
+            <!--                        android:textSize="16sp" />-->
+            <!--                </LinearLayout>-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:layout_weight="1">-->
+            <!--                    <com.google.android.material.textview.MaterialTextView-->
+            <!--                        android:id="@+id/Total"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:fontFamily="@font/regular"-->
+            <!--                        android:text="@string/achieved"-->
+            <!--                        android:textColor="#232323"-->
+            <!--                        android:textSize="15sp" />-->
+            <!--                    <com.google.android.material.textview.MaterialTextView-->
+            <!--                        android:id="@+id/achievedAmount"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="8dp"-->
+            <!--                        android:fontFamily="@font/medium"-->
+            <!--                        android:text="@string/_10_000"-->
+            <!--                        android:textColor="#232323"-->
+            <!--                        android:textSize="16sp" />-->
+            <!--                </LinearLayout>-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:layout_weight="1">-->
+            <!--                    <com.google.android.material.textview.MaterialTextView-->
+            <!--                        android:id="@+id/balanceHeading"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:fontFamily="@font/regular"-->
+            <!--                        android:text="@string/balance"-->
+            <!--                        android:textColor="#232323"-->
+            <!--                        android:textSize="15sp" />-->
+            <!--                    <com.google.android.material.textview.MaterialTextView-->
+            <!--                        android:id="@+id/balanceAmount"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_marginTop="8dp"-->
+            <!--                        android:fontFamily="@font/medium"-->
+            <!--                        android:text="@string/_10_000"-->
+            <!--                        android:textColor="#232323"-->
+            <!--                        android:textSize="16sp" />-->
+
+            <!--                </LinearLayout>-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_below="@+id/location"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/items"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/no_of_items"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/itemcount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/medium"
+                        android:text="@string/_126"
+                        android:textColor="#232323"
+                        android:textSize="16sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/balanceHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/balance"
+                        android:textColor="#232323"
+                        android:textSize="15sp" />
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/balanceAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/medium"
+                        android:text="@string/_10_000"
+                        android:textColor="@color/redColor"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</RelativeLayout>

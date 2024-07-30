@@ -1,0 +1,4 @@
+
+jkotlin:S117,"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(áêÚ¼øÿÿÿÿ
+ekotlin:S1174"NRename this parameter to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Šý¯·
+7kotlin:S1128"Remove this unused import.(œ‘Ü„úÿÿÿÿ

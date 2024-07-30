@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.main.adapter.PaymentDetailsAdapter">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/semibold"
+        android:text="Payment 1"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/regular"
+        android:text="Payment Date"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Mode"
+        android:layout_below="@+id/paymentdate"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paidamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Amount"
+        android:layout_marginStart="6dp"
+        android:layout_below="@+id/paymentmode"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/regular"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentcurrentdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/paymentdate"
+        android:fontFamily="@font/semibold"
+        android:text=": 24 January, 2022"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentmodetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentcurrentdate"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/paymentdate"
+        android:fontFamily="@font/semibold"
+        android:text=": Cash"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentmodeamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentmodetype"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/paymentdate"
+        android:fontFamily="@font/semibold"
+        android:text=": 5000"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/detailsline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paymentmodeamount"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/loadingline"
+        android:fontFamily="@font/bold"
+        android:visibility="gone" />
+
+
+
+
+
+</RelativeLayout>

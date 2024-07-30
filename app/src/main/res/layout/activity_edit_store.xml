@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".ui.main.activity.shopdetail.EditStoreActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient">
+            <LinearLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginStart="5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_back" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:gravity="center_horizontal"
+                        android:text="Edit Shop"
+                        android:padding="3dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shopNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="22dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/shopName"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:hint="@string/shop_name"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text|textNoSuggestions"
+                    android:paddingStart="16dp"
+                    android:text=""
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contactPersonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/contactPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:hint="@string/contact_person"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text|textNoSuggestions"
+                    android:paddingStart="16dp"
+                    android:text=""
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contactNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/contactNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:hint="@string/contact_number"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:inputType="number"
+                    android:paddingStart="16dp"
+                    android:text=""
+                    android:maxLength="10"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/shopTypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/shopType"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/regular"
+                    android:inputType="number"
+                    android:paddingStart="16dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:drawableEnd="@drawable/ic_viewmore"
+                    android:text="@string/shop_type"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@drawable/curverectline"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="invisible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/licenseLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/licenseNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text"
+                    android:paddingStart="16dp"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="16dp"
+                    android:hint="@string/license_number"
+                    android:text=""
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/attachLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:visibility="visible">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/attach"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/medium"
+                    android:inputType="number"
+                    android:text="@string/attach_license"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/uploadImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@null"
+                    android:textSize="12sp"
+                    android:textColor="#2D3295"
+                    android:fontFamily="@font/medium"
+                    android:inputType="number"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:drawablePadding="6dp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/upload_image"
+                    app:layout_constraintTop_toBottomOf="@+id/attach"
+                    android:drawableStart="@drawable/ic_upload"
+                    android:background="@drawable/curverectlineblue"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/informatiom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@null"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/regular"
+                    android:inputType="number"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/image_format_should_be_in_jpg_png_pdf"
+                    app:layout_constraintTop_toBottomOf="@+id/uploadImage"
+                    android:background="@null"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/addressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:hint="@string/address"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text|textNoSuggestions"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:text=""
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cityLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:hint="@string/city"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text|textNoSuggestions"
+                    android:paddingStart="16dp"
+                    android:text=""
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pincodeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/pincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:hint="@string/pincode"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/regular"
+                    android:inputType="number"
+                    android:paddingStart="16dp"
+                    android:text=""
+                    android:maxLength="6"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/coordinatesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTextView"
+                android:background="@drawable/curverectline"
+                android:visibility="visible">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/coordinates"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/regular"
+                    android:inputType="text"
+                    android:layout_marginEnd="8dp"
+                    android:drawableEnd="@drawable/ic_location_picker"
+                    android:paddingStart="16dp"
+                    android:text="@string/coordinates"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints,RtlSymmetry" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="19dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:baselineAligned="false">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveShop"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/buttoncolor"
+                android:fontFamily="@font/bold"
+                android:text="@string/update_shop"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelShop"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:backgroundTint="@color/buttoncolor"
+                android:fontFamily="@font/bold"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:cornerRadius="8dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

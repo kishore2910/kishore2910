@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "731269319423",
+    "project_id": "powersoap-sales",
+    "storage_bucket": "powersoap-sales.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731269319423:android:4e620b184c0c90927f9aca",
+        "android_client_info": {
+          "package_name": "com.powersoaps.distributorsales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731269319423-464v11qfaeuf9mf4kkqvf8orc186fp6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.powersoaps.distributorsales",
+            "certificate_hash": "9fa4d767ece239c67feef63a0a9f26891ef14c01"
+          }
+        },
+        {
+          "client_id": "731269319423-u2dtvn46tna4cll699ct5dc13nqor7ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ-snQdltnFFK0Q2IzkzHQm4N5ZlUEh1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731269319423-u2dtvn46tna4cll699ct5dc13nqor7ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ScrollViewCount">
+<!--    tools:context=".ui.main.activity.shopdetail.ShopDetailActivity">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/gradient">
+            <LinearLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?actionBarSize"
+                    android:layout_marginStart="5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_back" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:gravity="center"
+                        android:text="@string/murugan_stores"
+                        android:padding="3dp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:orientation="horizontal">
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/regular"
+                            android:gravity="center"
+                            android:text="@string/_4_kms_away"
+                            android:textColor="@color/lightgrey"
+                            android:textSize="12sp" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/regular"
+                            android:gravity="center"
+                            android:text="@string/traders"
+                            android:textColor="@color/lightgrey"
+                            android:textSize="12sp" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/callStore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:backgroundTint="#3F479B"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/call_store"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:cornerRadius="4dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/viewonMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_weight="1"
+                    android:padding="4dp"
+                    android:backgroundTint="#3F479B"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/view_on_map"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:cornerRadius="4dp" />
+
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                android:src="@drawable/map"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="18dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EDEDED">
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/questionText"
+                android:text="@string/what_you_wish_to_do"
+                android:fontFamily="@font/medium"
+                android:textColor="#232323"
+                android:textSize="18sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/curverectline"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_take_order"
+                    android:drawableEnd="@drawable/ic_nextlist"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/takeOrders"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/take_orders"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/medium"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#232323"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/bold" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_order_history"
+                    android:drawableEnd="@drawable/ic_nextlist"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/orderHistory"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/orders_history"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/medium"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#232323"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/bold" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_order_collection"
+                    android:drawableEnd="@drawable/ic_nextlist"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/orderCollection"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/medium"
+                    android:text="@string/order_collection"
+                    android:drawablePadding="18dp"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#232323"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/bold" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_sales_return"
+                    android:drawableEnd="@drawable/ic_nextlist"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/salesReturn"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/sales_return"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/medium"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#232323"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/bold" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_shop_insight"
+                    android:drawableEnd="@drawable/ic_nextlist"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/shopInSight"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/shop_insight"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/medium"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#232323"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/bold" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_update_location"
+                    android:drawableEnd="@drawable/ic_nextlist"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/updateLocation"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/update_location"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/medium"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#232323"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="#F1F1F1"
+                    android:fontFamily="@font/bold" />
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_about_shop"
+                    android:drawableEnd="@drawable/ic_nextlist"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/aboutShop"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/about_shop"
+                    android:drawablePadding="18dp"
+                    android:fontFamily="@font/medium"
+                    android:padding="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#232323"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.main.adapter.OrderHistoryAdapter">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:background="@color/white"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/currentdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/bold"
+                android:text="21 February, 2022"
+                android:textColor="#232323"
+                android:textSize="16sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                android:layout_marginStart="10dp"
+                android:visibility="gone"
+                android:layout_marginTop="1dp"
+                android:layout_toEndOf="@+id/currentdate"
+                app:cardBackgroundColor="@color/darkred">
+
+                <TextView
+                    android:id="@+id/pendingStatusText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pending"
+                    android:fontFamily="@font/bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/currentdate"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pending"
+                android:fontFamily="@font/bold"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/currentdate"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:id="@+id/editBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="5dp"
+                android:visibility="visible"
+                android:src="@drawable/edit_new" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/orderidheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentdate"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/regular"
+                android:text="Order ID :"
+                android:textColor="#686868"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ordercount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentdate"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/orderidheading"
+                android:fontFamily="@font/regular"
+                android:text="657482"
+                android:textColor="#686868"
+                android:textSize="14sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/itemheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentdate"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/ordercount"
+                android:fontFamily="@font/regular"
+                android:text="| Items :"
+                android:textColor="#686868"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/itemcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/currentdate"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/itemheading"
+                android:fontFamily="@font/regular"
+                android:text="4"
+                android:textColor="#686868"
+                android:textSize="14sp" />
+
+
+            <View
+                android:id="@+id/viewone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/itemcount"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                android:background="#F1F1F1" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/amountheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewone"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/regular"
+                android:text="Total Amount"
+                android:textColor="#232323"
+                android:visibility="visible"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/paidheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewone"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/regular"
+                android:text="Amount Paid"
+                android:textColor="#232323"
+                android:visibility="visible"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/standingheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewone"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/regular"
+                android:text="Outstanding"
+                android:textColor="#232323"
+                android:visibility="visible"
+                android:textSize="14sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paidheading"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/medium"
+                android:text="₹ 14,000"
+                android:textColor="#232323"
+                android:visibility="visible"
+                android:textSize="16sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paidheading"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/medium"
+                android:text="₹ 10,000"
+                android:textColor="#232323"
+                android:visibility="visible"
+                android:textSize="16sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/outstanding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/paidheading"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/medium"
+                android:text="₹ 4,000"
+                android:textColor="#DB5252"
+                android:visibility="visible"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>

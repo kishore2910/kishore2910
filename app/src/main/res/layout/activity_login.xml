@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".ui.main.activity.introscreens.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@drawable/gradient"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/action_bar"
+            android:layout_marginTop="70dp"
+            android:padding="10dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/loginTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoImageView"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/bold"
+            android:text="@string/login"
+            android:textColor="#232323"
+            android:textSize="26sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/labelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/regular"
+            android:gravity="center"
+            android:text="@string/enter_your_registered_mobile_number_n_for_verification"
+            android:textColor="#686868"
+            android:textSize="16sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mobileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_below="@+id/labelTextView"
+            android:background="@drawable/curverectline"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:hint="@string/mobile_number"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/regular"
+                android:inputType="number"
+                android:paddingStart="16dp"
+                android:text=""
+                android:maxLength="10"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/editbox"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="18dp"
+            android:layout_below="@+id/mobileLayout" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/eye"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_marginEnd="26dp"
+            android:src="@drawable/password_eye"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/passwordLayout"
+            android:layout_alignTop="@id/passwordLayout"
+            />
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/gradiant"
+            android:layout_below="@+id/passwordLayout"
+            android:layout_alignParentRight="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginmobile"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_below="@+id/passwordLayout"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#EB008B"
+            android:fontFamily="@font/bold"
+            android:text="@string/Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="8dp" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
